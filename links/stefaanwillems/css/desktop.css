@@ -1,0 +1,37 @@
+.main{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header img{
+    float: left;
+}
+nav{
+    border: none;
+    font-size: 80%;
+    padding: 40px 0px 40px 300px;
+    font-weight: 700;
+}
+nav ul li{
+    border: none;
+    display: inline;
+}
+
+.banner{
+    padding: 15px;
+}
+
+section article{
+    margin: 5px;
+    float: left;
+    display: inline-block;
+    width: 72%;
+}
+section article h1{
+    color: #000;
+}
+section aside{
+    margin: 5px;
+    display: inline-block;
+    width: 25%;
+}

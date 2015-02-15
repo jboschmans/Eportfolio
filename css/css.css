@@ -1,0 +1,187 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol { 
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} 
+/* end reset browser styles */
+
+body{
+    background-image: linear-gradient(180deg, #999, white);
+    background-repeat: no-repeat;
+}
+
+.main{
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    text-align: center;
+    display: inline-block;
+}
+nav ul li a{
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: darkslategray;
+    padding: 3px 61px;
+    font-weight: 700;
+    border-left: 2px dotted gray;
+}
+nav ul li:first-of-type a{
+    border: none;
+}
+nav ul li a:hover{
+    background-color: #bbb;
+}
+nav ul li a[href="#"]{
+    background-color: #777;
+}
+
+.picture img{
+    width: 100%;
+    height: 400px;
+}
+
+section{
+    padding: 25px 15px;
+}
+section h1{
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+section h1:first-of-type{
+    margin-top: 0px;
+}
+section p{
+    font-size: 1.05em;
+    margin: 18px 0px;
+}
+section figure{
+    float: left;
+    margin-right: 15px; 
+    margin-bottom: 15px; 
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    background-color: #999;
+    color: #333;
+    padding: 12px;
+    clear: both;
+}
+
+h2{
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+section p a{
+    color: #555;
+}
+
+.smca{
+    font-variant: small-caps;
+    clear: left;
+}
+
+section article{
+    border-bottom: 2px dashed #555;
+    margin: 5px;
+    padding: 15px 10px;
+    min-height: 120px;
+}
+.nominheight article{
+    min-height: 0px;
+}
+section article:last-of-type{
+    border: none;
+}
+section article h3{
+    font-size: 21px;
+}
+section article figure img{
+    height: 120px;
+    width: 210px;
+}
+section article figure .mij{
+    width: 227px;
+    height: auto;
+}
+
+.alternate article:nth-of-type(2n) figure{
+     float: right;
+     margin-left: 15px;
+}
+.alternate article:nth-of-type(2n) h3{
+     text-align: right;
+}
+.alternate article:nth-of-type(2n) p{
+     text-align: right;
+}
+
+.picture figure{
+    width: 100%;
+    height: 400px;
+    -webkit-animation: imageAnimation 20s infinite ease-out;
+}
+
+@-webkit-keyframes imageAnimation{
+    0%, 25%, 100%{
+    background-image: url(../images/computer.jpg);
+}
+    33%, 59%{
+    background-image: url(../images/guitar.jpg);
+}
+    67%, 92%{
+    background-image: url(../images/cycling.jpg);
+}
+}
+
+.ordlabel{
+    display: inline-block;
+    width: 4.6em;
+    text-align: right;
+    margin-right: 5px;
+}
+
+section article ul{
+    list-style-type: circle;
+}
+section article ul li{
+    margin: 7px 0;
+    font-size: 105%;
+}

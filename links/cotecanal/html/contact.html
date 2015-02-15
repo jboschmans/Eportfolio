@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C&ocirc;t&eacute; Canal</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/cotecanal.css" />
+    </head>
+    <body>
+        <div class="main">
+            <section>
+                <aside>
+                    <img alt="logo" src="../images/logo.png"/>
+                </aside>
+                <article>
+                    <h1>Contact</h1>
+                    <form action="processinformatie.php" method="get">
+                        <label for="naam">Naam: </label>
+                        <input type="text" name="naam" id="naam"/><br/>
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email"/><br/>
+                        <label for="onderwerp">Onderwerp: </label>
+                        <select name="onderwerp" id="onderwerp">
+                            <option value="Informatie">Informatie</option>
+                            <option value="Reservatie">Reservatie</option>
+                        </select><br/>
+                        <label for="bericht">Uw bericht:</label><br/>
+                        <textarea name="bericht" id="bericht" rows="6" cols="40"></textarea><br/>
+                        <input type="submit"/>
+                    </form>
+                </article>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Welkom</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <table>
+                    <tr>
+                        <td>
+                            <p id="p_west">
+                                Een oase van rust ...<br/>
+                                Verblijf op een unieke locatie in Brugge!
+                            </p>
+                        </td>
+                        <td>
+                            <p id="p_east">
+                                Contact: info@cotecanal.be +32(0)475 457 707<br/>
+                                Contact: huyzehertsberge@skynet.be +32 (0)50 333 542
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </body>
+</html>

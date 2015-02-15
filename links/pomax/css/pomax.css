@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End of reset */
+
+@fontface{
+    font-family: 'Helveticaltstd';
+    src: url(../fonts/helveticaltstd-webfont.eot);
+    src: url(../fonts/helveticaltstd-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/helveticaltstd-webfont.woff) format('woff'),
+        url(../fonts/helveticaltstd-webfont.ttf) format('truetype'),
+        url(../fonts/helveticaltstd-webfont.svg) format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family: Helveticaltstd, Arial, Tahoma, sans-serif;
+    color: #393939;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.main{
+    width: 990px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    color: #393939;
+    font-size: 16px;
+    display: inline-block;
+    padding: 6px;
+    margin: 8px 5px;
+    border: none;
+    border-image: url(../images/frame_small.png) 6;
+}
+
+.imageslideshow{
+    width: 990px;
+    height: 360px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.vierdivs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vierdivs div{
+    width: 236px;
+}
+
+.vierdivs div aside{
+    color: white;
+    padding: 10px;
+}
+
+.vierdivs div aside p:nth-of-type(1){
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.vierdivs div aside p:nth-of-type(2){
+    font-size: 12px;
+}
+
+.vierdivs div:nth-of-type(1){
+    background-color: #cc431e;
+}
+.vierdivs div:nth-of-type(2){
+    background-color: #302c25;
+}
+.vierdivs div:nth-of-type(3){
+    background-color: #7f8c25;
+}
+.vierdivs div:nth-of-type(4){
+    background-color: #e7bc37;
+}
+
+/* ANITMATIES */
+@keyframes imageAnimation{
+    0%, 16%, 100%{
+    background-image: url(../images/banner1.jpg);
+}
+    20%, 36%{
+    background-image: url(../images/banner2.jpg);
+}
+    40%, 56%{
+    background-image: url(../images/banner3.jpg);
+}
+    60%, 76%{
+    background-image: url(../images/banner4.jpg);
+}
+    80%, 96%{
+    background-image: url(../images/banner5.jpg);
+}
+}
+@-webkit-keyframes imageAnimation{
+    0%, 16%, 100%{
+    background-image: url(../images/banner1.jpg);
+}
+    20%, 36%{
+    background-image: url(../images/banner2.jpg);
+}
+    40%, 56%{
+    background-image: url(../images/banner3.jpg);
+}
+    60%, 76%{
+    background-image: url(../images/banner4.jpg);
+}
+    80%, 96%{
+    background-image: url(../images/banner5.jpg);
+}
+}
+
+.imageslideshow{
+    animation: imageAnimation 25s infinite ease-out;
+    -webkit-animation: imageAnimation 25s infinite ease-out;
+    margin: 14px 0;
+}
+
+@keyframes textAnimation{
+    0%, 16%, 100%{
+    background-image: url(../images/banner1.jpg);
+}
+    20%, 36%{
+    background-image: url(../images/banner2.jpg);
+}
+    40%, 56%{
+    background-image: url(../images/banner3.jpg);
+}
+    60%, 76%{
+    background-image: url(../images/banner4.jpg);
+}
+    80%, 96%{
+    background-image: url(../images/banner5.jpg);
+}
+}
+
+.textslideshow{
+    padding-bottom: 30px;
+    position: relative;
+}
+ul.textslideshow li h1{
+    position: absolute;
+    bottom: -300px;
+    left: 0px;
+    color: white;
+    background-color: rgba(0,0,0,.7);
+    font-size: 50px;
+    line-height: 125%;
+    width: 495px;
+    text-align: right;
+}
+@keyframes textAnimation{
+    0%, 16%, 100%{
+    opacity: 1;
+}
+    20%, 96%{
+    opacity: 0;
+}
+}
+@-webkit-keyframes textAnimation{
+    0%, 16%, 100%{
+    opacity: 1;
+}
+    20%, 96%{
+    opacity: 0;
+}
+}
+ul.textslideshow li{
+    opacity: 0;
+    animation: textAnimation 25s ease-out infinite;
+    -webkit-animation: textAnimation 25s ease-out infinite;
+}
+ul.textslideshow li:nth-of-type(2){
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+ul.textslideshow li:nth-of-type(3){
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+ul.textslideshow li:nth-of-type(4){
+    animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+}
+ul.textslideshow li:nth-of-type(5){
+    animation-delay: 20s;
+    -webkit-animation-delay: 20s;
+}

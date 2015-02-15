@@ -1,0 +1,202 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol { 
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} 
+/* end reset browser styles */
+
+@font-face{
+    font-family: 'helveticaneue';
+    src: url(../fonts/helveticaneue.eot);
+    src: url(../fonts/helveticaneue.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/helveticaneue.woff) format('woff'),
+        url(../fonts/helveticaneue.ttf) format('truetype'),
+        url(../fonts/helveticaneue.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'waerboom';
+    src: url(../fonts/waerboom_font.eot);
+    src: url(../fonts/waerboom_font.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/waerboom_font.woff) format('woff'),
+        url(../fonts/waerboom_font.ttf) format('truetype'),
+        url(../fonts/waerboom_font.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'waerboom';
+    src: url(../fonts/waerboom_font_bold.eot);
+    src: url(../fonts/waerboom_font_bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/waerboom_font_bold.woff) format('woff'),
+        url(../fonts/waerboom_font_bold.ttf) format('truetype'),
+        url(../fonts/waerboom_font_bold.svg) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'waerboom';
+    src: url(../fonts/waerboom_font_bold_italic.eot);
+    src: url(../fonts/waerboom_font_bold_italic.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/waerboom_font_bold_italic.woff) format('woff'),
+        url(../fonts/waerboom_font_bold_italic.ttf) format('truetype'),
+        url(../fonts/waerboom_font_bold_italic.svg) format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{
+    font-family: helveticaneue, waerboom, Arial, Tahoma, sans-serif;
+}
+
+.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+header{
+    height: 74px;
+}
+header .wrapper img{
+    float: left;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-top: 17px;
+}
+nav ul li{
+    display: inline;
+    color: #757575;
+    font-size: 125%;
+    padding: 4px 10px;
+    border-right: 1px dashed #757575;
+}
+nav ul li:hover{
+    color: #1a7780;
+}
+nav ul li:last-of-type{
+    border: none;
+}
+
+.slider{
+    background-image: url(../images/patternslider.png);
+    border-bottom: 8px solid #878979;
+}
+.slider section{
+    background-image: url(../images/waerboom-groot.jpg);
+    display: flex;
+    justify-content: flex-end;
+}
+.slider section article{
+    background-color: rgba(78,80,70,.7);
+    padding: 25px;
+    margin: 65px 25px;
+    width: 320px;
+    color: white;
+    border-radius: 17px;
+}
+
+.slider section article h1{
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 90%;
+}
+.slider section article p{
+    line-height: 122%;
+    font-size: 17px;
+}
+
+.boxes{
+    background-color: #d8d8c9;
+    padding: 5px 0px;
+}
+
+.flex-container{
+    display: flex;
+    
+}
+
+.box{
+    background-color: #8e956f;
+    text-align: center;
+    margin: 8px 8px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #000;
+    width: 245px;
+}
+.box aside{
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 8px;
+}
+.box aside p{
+    text-transform: uppercase;
+    padding: 8px 0px;
+}
+.box aside figure{
+    margin-bottom: 5px;
+}
+.box aside strong{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #6b714d;
+    font-weight: normal;
+}
+.box:nth-of-type(1) aside{
+    border-bottom: 4px solid #97c6d9;
+}
+.box:nth-of-type(2) aside{
+    border-bottom: 4px solid #a6715a;
+}
+.box:nth-of-type(3) aside{
+    border-bottom: 4px solid #dcad5b;
+}
+.box:nth-of-type(4) aside{
+    border-bottom: 4px solid #238b95;
+}
+.box .bottom{
+    padding: 18px;
+    text-align: left;
+    color: #fff;
+}
+
+footer aside:nth-of-type(1){
+    background-color: #fff;
+    color: #a2a48e;
+    text-transform: uppercase;
+}
+footer aside:nth-of-type(2){
+    background-color: #a2a48e;
+}
+footer{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}

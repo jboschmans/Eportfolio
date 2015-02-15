@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>E-Portfolio Website - Joris Boschmans - Contact</title>
+        <link href="../css/css.css" rel="stylesheet" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="mezelf.html">Over Mezelf</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="hobbys.html">Hobby&apos;s</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="picture">
+                <img alt="mezelfpicture" src="../images/contact.jpg" />
+            </div>
+            <section class="alternate">
+                <h1 class="smca">Contact</h1>
+                <p>
+                    Indien u een bericht naar mij wilt sturen voor meer informatie, of omdat u interesse heeft in mijn vaardigheden, dan kan u dat steeds doen via onderstaand formulier.
+                </p><br/>
+                <form action="mailto:jorisboschmans@hotmail.com" method="post">
+                    <label class="ordlabel" for="naam">Naam: </label>
+                    <input type="text" name="naam" id="naam" placeholder="Uw naam" required/><br/>
+                    <label class="ordlabel" for="email" >E-mail: </label>
+                    <input type="email" name="email" id="email" placeholder="naam@provider.be" required/><br/>
+                    <input type="text" name="onderwerp" id="onderwerp" value="Website Formulier" hidden/><br/>
+                    <label for="bericht">Uw bericht:</label><br/>
+                    <textarea name="bericht" id="bericht" rows="6" cols="40" placeholder="Type hier uw bericht" required></textarea><br/>
+                    <input type="submit" value="Verzenden"/>
+                    <input type="reset" value="Alles wissen"/>
+                </form>
+            </section>
+            <footer>
+                E-Portfolio website &mdash; Joris Boschmans
+            </footer>
+        </div>
+    </body>
+</html>

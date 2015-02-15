@@ -1,0 +1,104 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;	
+}
+
+body{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    color: #7d8790;
+    background-color: #feffff;
+    margin: 5px;
+}
+
+nav{
+    border: 1px solid lightgray;
+}
+nav ul li{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #000;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+nav ul li:hover{
+    color: #089bd9;
+}
+
+.banner{
+    background-color: #089bd9;
+}
+.banner img{
+    width: 100%;
+}
+
+section article h1{
+    font-size: 26px;
+    line-height: 26px;
+}
+section article p{
+    font-size: 13px;
+    line-height: 19px;
+    color: #606060;
+    margin: 8px 0px;
+}
+section aside{
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+section aside h2{
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+section aside p{
+    margin-bottom: 13px;
+}
+section aside figure{
+    background-color: #000;
+    color: #feffff;
+    padding: 13px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+footer{
+    font-size: 12px;
+    color: #fff;
+    background-image: url(../images/footer-bg.jpg);
+    padding: 10px;
+}

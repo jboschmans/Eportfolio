@@ -1,0 +1,211 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol { 
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} 
+/* end reset browser styles */
+
+@font-face{
+    font-family: 'Ingleby';
+    src: url('../fonts/Ingleby_regular.eot');
+    src: url('../fonts/Ingleby_regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ingleby_regular.woof') format('woof'),
+        url('../fonts/Ingleby_regular.ttf') format('truetype'),
+        url('../fonts/Ingleby_regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Ingleby';
+    src: url('../fonts/Ingleby_bold.eot');
+    src: url('../fonts/Ingleby_bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ingleby_bold.woof') format('woof'),
+        url('../fonts/Ingleby_bold.ttf') format('truetype'),
+        url('../fonts/Ingleby_bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Ingleby';
+    src: url('../fonts/Ingleby_italic.eot');
+    src: url('../fonts/Ingleby_italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ingleby_italic.woof') format('woof'),
+        url('../fonts/Ingleby_italic.ttf') format('truetype'),
+        url('../fonts/Ingleby_italic.svg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'Ingleby';
+    src: url('../fonts/Ingleby_bold_italic.eot');
+    src: url('../fonts/Ingleby_bold_italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ingleby_bold_italic.woof') format('woof'),
+        url('../fonts/Ingleby_bold_italic.ttf') format('truetype'),
+        url('../fonts/Ingleby_bold_italic.svg') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{
+    font-family: Ingleby, Tahoma, Verdana, Arial, sans-serif;
+    background-color: #fff;
+    color: #363739;
+}
+
+.main{
+    width: 850px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #363739;
+}
+
+nav{
+    margin-left: 12px;
+    margin-bottom: 7px;
+}
+
+nav a{
+    padding: 4px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited{
+    color: #fff;
+}
+
+nav a:hover:not([href='#']){
+    color: #8bc501;
+}
+
+nav a[href='#']{
+    background-color: #8bc501;
+}
+
+section{
+    background-image: url('../images/elektriciteit360bg.jpg');
+}
+
+article{
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    margin-left: 100px;
+    margin-right: 200px;
+    background-color: white;
+}
+
+h1{
+    font-size: 150%;
+    color: #8bc501;
+}
+
+p{
+    letter-spacing: .05em;
+    margin-top: 24px;
+    line-height: 120%;
+}
+
+p:first-letter{
+    font-size: 150%;
+}
+form p:first-letter{
+    font-size: 100%
+}
+
+p:first-line{
+    font-weight: bold;
+}
+
+article p:first-of-type{
+    -webkit-column-count: 2;
+}
+
+ul li{
+    list-style-image: url(../images/lamp_mini.png);
+}
+
+ul{
+    margin-top: 3px;
+}
+
+footer{
+    text-align: center;
+    color: #7f8084;
+    font-size: 10px;
+    background-color: #8bc501;
+}
+
+table tr:first-of-type th{
+    background-color: #8bc501;
+}
+
+th, td{
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+table tr:first-of-type td{
+    border: none;
+}
+
+table a{
+    color: black;
+    text-decoration: none;
+}
+
+table a[href*='facebook']:before{
+    content: url(../images/facebook.png);
+}
+table a:not([href*='facebook']):before{
+    content: url(../images/file.png);
+}
+
+article img{
+    margin: 8px;
+}
+
+article img:nth-of-type(even){
+    border: 3px solid #8bc501;
+}
+article img:nth-of-type(odd){
+    border: 3px solid #363739;
+}
+
+*::selection{
+    background-color: #363739;
+    color: #fff;
+}
+
+.ordform{
+    display: inline-block;
+    width: 8em;
+    text-align: right;
+    margin-right: 5px;
+}

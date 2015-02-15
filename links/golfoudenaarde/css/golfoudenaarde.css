@@ -1,0 +1,92 @@
+*{
+    font-family: SansPro, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+
+body{
+    background-color: #2a2824;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-shadow: -3px 2px 2px #666;
+    font-size: 200%;
+}
+
+h2{
+    text-transform: uppercase;
+    color: #772b4e;
+}
+
+a:active{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+    text-decoration: none;
+}
+a:visited{
+    color: pink;
+    text-decoration: none;
+}
+a:link{
+    color: #ee8240;
+    text-decoration: none;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+}
+
+div{
+    margin-left: 150px;
+    margin-right: 250px;
+}
+
+footer{
+    font-size: 75%;
+    color: #999;
+    margin-top: 30px;
+    border-top: 1px solid gray;
+    padding-top: 5px;
+}
+
+.arrarticle{
+    border: 1px solid #ee8240;
+    padding: 5px;
+    margin-bottom: 12px;
+}
+
+quote{
+    font-size: 125%;
+    background-color: #fff;
+    color: #772b4e;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.arrteken li{
+    list-style-image: url(../images/golfbal.gif);
+}
+
+.firstletterorange p:first-letter{
+    color: #ee8240;
+    font-size: 200%;
+}
+
+.greenfeetabel tr th{
+    color: gray;
+}
+
+.greenfeetabel tr:nth-child(even){
+    background-color: gray;
+}
+
+.greenfeetabel tr td{
+    padding: 3px;
+}
